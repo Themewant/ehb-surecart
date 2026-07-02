@@ -5,7 +5,7 @@
  * Plugin URI:  https://themewant.com/downloads/hotel-booking/
  * Author:      Themewant
  * Author URI:  http://themewant.com/
- * Version:     1.0.3
+ * Version:     1.0.4
  * License:     GPL2
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: ehb-surecart
@@ -14,7 +14,7 @@
 */
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-define( 'ESHB_SURECART_VERSION', '1.0.3' );
+define( 'ESHB_SURECART_VERSION', '1.0.4' );
 define( 'ESHB_SURECART_PL_ROOT', __FILE__ );
 define( 'ESHB_SURECART_PL_URL', plugins_url( '/', ESHB_SURECART_PL_ROOT ) );
 define( 'ESHB_SURECART_PL_PATH', plugin_dir_path( ESHB_SURECART_PL_ROOT ) );

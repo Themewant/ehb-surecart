@@ -151,20 +151,16 @@ class ESHB_SURECART {
 		$currentVersion = ESHB_SURECART_VERSION;
 		$author         = 'Themewant';
 
-		if(!empty($license_key)){
-			// setup the updater
-			$edd_updater = new ESHB_SURECART\EDD_SL_Plugin_Updater( $apiUrl, $pluginFile, array(
-				'version' 	=> $currentVersion,		// current version number
-				'license' 	=> $license_key,	// license key (used get_option above to retrieve from DB)
-				'item_id'   => ESHB_SURECART_ID,	// id of this plugin
-				'author' 	=> $author,	// author of this plugin
-				'beta'      => false                // set to true if you wish customers to receive update notifications of beta releases
-			) );
-		}
+		// setup the updater
+		$edd_updater = new ESHB_SURECART\EDD_SL_Plugin_Updater( $apiUrl, $pluginFile, array(
+			'version' 	=> $currentVersion,		// current version number
+			'license' 	=> $license_key,	// license key (used get_option above to retrieve from DB)
+			'item_id'   => ESHB_SURECART_ID,	// id of this plugin
+			'author' 	=> $author,	// author of this plugin
+			'beta'      => false                // set to true if you wish customers to receive update notifications of beta releases
+		) );
+		
 		
 	}
 
 }
-
-
-   
